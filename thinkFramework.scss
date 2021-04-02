@@ -197,7 +197,7 @@ container and layout
   }
 }
 
-tu-d-m-block {
+.tu-d-m-block {
   @media (max-width: 700px) {
     display: block;
   }
@@ -244,7 +244,7 @@ tu-d-m-block {
 }
 
 .tu-jc-s {
-  justify-content: flex-end;
+  justify-content: flex-start;
 }
 
 .tu-jc-c {
