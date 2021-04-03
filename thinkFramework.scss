@@ -61,27 +61,27 @@ $thinkSuccess: #72fd37;
 
 
 .tu-bg-primary {
-  color: $thinkPrimary;
+  background: $thinkPrimary;
 }
 
 .tu-bg-primary-blue {
-  color: $thinkPrimaryBlue;
+  background: $thinkPrimaryBlue;
 }
 
 .tu-bg-border {
-  color: $thinkBorder;
+  background: $thinkBorder;
 }
 
 .tu-bg-warn {
-  color: $thinkWarning;
+  background: $thinkWarning;
 }
 
 .tu-bg-info {
-  color: $thinkInfo;
+  background: $thinkInfo;
 }
 
 .tu-bg-success {
-  color: $thinkSuccess;
+  background: $thinkSuccess;
 }
 
 /**
@@ -275,21 +275,21 @@ container and layout
   align-items: flex-end;
 }
 
-.tu-direction-row {
+.tu-fd-row {
   flex-direction: row;
 }
 
-.tu-direction-col {
+.tu-fd-col {
   flex-direction: column;
 }
 
-.tu-direction-m-row {
+.tu-fd-m-row {
   @media (max-width: 700px) {
     flex-direction: row;
   }
 }
 
-.tu-direction-m-col {
+.tu-fd-m-col {
   @media (max-width: 700px) {
     flex-direction: column;
   }
@@ -869,6 +869,7 @@ MARGINESY
   font-weight: 500;
   opacity: 0.7;
   transition: 0.3s;
+  cursor: pointer;
 
   &:hover {
     opacity: 1;
@@ -881,6 +882,7 @@ MARGINESY
 }
 
 .tu-btn-outline {
+  cursor: pointer;
   min-width: 80px;
   padding: 10px 20px;
   border-radius: 3px;
@@ -993,7 +995,27 @@ MARGINESY
 .tu-text-20{
   font-size: 20px;
 }
-
+.tu-text-22{
+  font-size: 22px;
+}
+.tu-text-24{
+  font-size: 24px;
+}
+.tu-text-26{
+  font-size: 26px;
+}
+.tu-text-28{
+  font-size: 28px;
+}
+.tu-text-30{
+  font-size: 30px;
+}
+.tu-text-32{
+  font-size: 32px;
+}
+.tu-text-34{
+  font-size: 34px;
+}
 .tu-fw-300{
   font-weight: 300;
 }
@@ -1011,4 +1033,14 @@ MARGINESY
 }
 .tu-fw-800{
   font-weight: 800;
+}
+
+.tu-scroll-hidden{
+  overflow: hidden;
+}
+.tu-scroll-auto{
+  overflow: auto;
+}
+.tu-c-p{
+  cursor: pointer;
 }
