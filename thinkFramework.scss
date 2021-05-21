@@ -35,6 +35,54 @@ $thinkWarning: #ff1212;
 $thinkInfo: #FAB170;
 $thinkSuccess: #72fd37;
 
+.tu-border--primary {
+  border: 1px solid $thinkPrimary;
+}
+
+.tu-border--primary-b {
+  border: 1px solid $thinkPrimaryBlue;
+}
+
+.tu-border--border {
+  border: 1px solid $thinkBorder;
+}
+
+.tu-border--content {
+  border: 1px solid $thinkContent;
+}
+
+.tu-border--warn {
+  border: 1px solid $thinkWarning;
+}
+
+.tu-border--info {
+  border: 1px solid $thinkInfo;
+}
+
+.tu-border--success {
+  border: 1px solid $thinkSuccess;
+}
+
+.tu-radius-0 {
+  border-radius: 0;
+}
+
+.tu-radius-3 {
+  border-radius: 3px;
+}
+
+.tu-radius-5 {
+  border-radius: 5px;
+}
+
+.tu-radius-10 {
+  border-radius: 10px;
+}
+
+.tu-radius-circle {
+  border-radius: 50%;
+}
+
 .tu--primary {
   color: $thinkPrimary;
 }
@@ -171,7 +219,7 @@ container and layout
   width: 100%;
 }
 
-.tu-full-width {
+.tu-fw {
   width: 100%;
   max-width: 100%;
 }
@@ -225,6 +273,27 @@ container and layout
 
 .tu-d-grid {
   display: grid;
+}
+.tu-g-2{
+  grid-template-columns: 1fr 1fr;
+  @media(max-width: 700px){
+    grid-template-columns: 1fr;
+  }
+}
+.tu-g-1{
+  grid-template-columns: 1fr;
+}
+.tu-g-3{
+  grid-template-columns: 1fr 1fr 1fr;
+  @media(max-width: 700px){
+    grid-template-columns: 1fr;
+  }
+}
+.tu-g-4{
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  @media(max-width: 700px){
+    grid-template-columns: 1fr;
+  }
 }
 
 .tu-d-none {
@@ -935,112 +1004,138 @@ MARGINESY
 }
 
 
-
-
 .tu-btn-o-primary {
   @extend .tu-btn-outline;
   color: $thinkPrimary;
-  border:1px solid $thinkPrimary;
+  border: 1px solid $thinkPrimary;
 }
 
 .tu-btn-o-primary-blue {
   @extend .tu-btn-outline;
   color: $thinkPrimaryBlue;
-  border:1px solid $thinkPrimaryBlue;
+  border: 1px solid $thinkPrimaryBlue;
 }
 
 .tu-btn-o-border {
   @extend .tu-btn-outline;
   color: $thinkBorder;
-  border:1px solid $thinkBorder;
+  border: 1px solid $thinkBorder;
 }
 
 .tu-btn-o-warn {
   @extend .tu-btn-outline;
   color: $thinkWarning;
-  border:1px solid $thinkWarning;
+  border: 1px solid $thinkWarning;
 }
 
 .tu-btn-o-info {
   @extend .tu-btn-outline;
   color: $thinkInfo;
-  border:1px solid $thinkInfo;
+  border: 1px solid $thinkInfo;
 }
 
 .tu-btn-o-success {
   @extend .tu-btn-outline;
-
   color: $thinkSuccess;
-  border:1px solid $thinkSuccess;
+  border: 1px solid $thinkSuccess;
 }
 
-.tu-text-10{
+.tu-text-10 {
   font-size: 10px;
 }
-.tu-text-12{
+
+.tu-text-12 {
   font-size: 12px;
 }
-.tu-text-14{
+
+.tu-text-14 {
   font-size: 14px;
 }
-.tu-text-15{
+
+.tu-text-15 {
   font-size: 15px;
 }
-.tu-text-16{
+
+.tu-text-16 {
   font-size: 16px;
 }
-.tu-text-18{
+
+.tu-text-18 {
   font-size: 18px;
 }
-.tu-text-20{
+
+.tu-text-20 {
   font-size: 20px;
 }
-.tu-text-22{
+
+.tu-text-22 {
   font-size: 22px;
 }
-.tu-text-24{
+
+.tu-text-24 {
   font-size: 24px;
 }
-.tu-text-26{
+
+.tu-text-26 {
   font-size: 26px;
 }
-.tu-text-28{
+
+.tu-text-28 {
   font-size: 28px;
 }
-.tu-text-30{
+
+.tu-text-30 {
   font-size: 30px;
 }
-.tu-text-32{
+
+.tu-text-32 {
   font-size: 32px;
 }
-.tu-text-34{
+
+.tu-text-34 {
   font-size: 34px;
 }
-.tu-fw-300{
+
+.tu-fw-300 {
   font-weight: 300;
 }
-.tu-fw-400{
+
+.tu-fw-400 {
   font-weight: 400;
 }
-.tu-fw-500{
+
+.tu-fw-500 {
   font-weight: 500;
 }
-.tu-fw-600{
+
+.tu-fw-600 {
   font-weight: 600;
 }
-.tu-fw-700{
+
+.tu-fw-700 {
   font-weight: 700;
 }
-.tu-fw-800{
+
+.tu-fw-800 {
   font-weight: 800;
 }
 
-.tu-scroll-hidden{
+.tu-scroll-hidden {
   overflow: hidden;
 }
-.tu-scroll-auto{
+
+.tu-scroll-auto {
   overflow: auto;
 }
-.tu-c-p{
+
+.tu-scroll-x-hidden {
+  overflow-x: hidden;
+}
+
+.tu-scroll-y-hidden {
+  overflow-y: hidden;
+}
+
+.tu-c-p {
   cursor: pointer;
 }
